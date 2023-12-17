@@ -1,0 +1,124 @@
+*{
+    cursor: url("./cursor2.png"), auto;
+}
+
+body{
+    font-family: 'Skranji', cursive;
+    text-align: center;
+    background: url(./bg3.jpg);
+    background-size: cover;
+    color: rgb(255, 31, 31);
+}
+
+h1{
+    text-shadow: 0 0 4px black; 
+}
+h2{
+    color: gold;
+    font-size: 40px;
+    text-shadow: 0 0 8px rgb(76, 0, 255); 
+}
+
+#board{
+    width: 680px;
+    height: 490px;
+    margin: 0 auto;
+    /* background-color: red; */
+    display: flex;
+    flex-wrap: wrap;
+    background: url(./see.jpg);
+    background-size: cover;
+    border: 3px solid white;
+    border-radius: 25px;
+}
+
+#board div{
+    top: 0px;
+    width: 220px;
+    height: 160px;
+    background-image: url(./boatObj1.png);
+    background-size: cover;
+}
+
+#board div img{
+    width: 120px;
+    height: 140px;
+
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-drag: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+}
+
+.bubble{
+    width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    position: absolute;
+    bottom: 0;
+    
+}
+.bubble img{
+    width: 40px;
+    height: auto;
+    /* display: inline-block; */
+    animation: bubble 5s linear infinite;
+    opacity: 0;
+}
+
+@keyframes bubble{
+    0%{
+        opacity: 0;
+        transform: translateY(0);
+    }
+    30%{
+        opacity: 1;
+    }
+    70%{
+        opacity: 1;
+    }
+    100%{
+        opacity: 0;
+        transform: translateY(-70vh);
+    }
+}
+
+.bubble img:nth-child(1){
+    animation-delay: 2s;
+}
+.bubble img:nth-child(2){
+    animation-delay: 1s;
+    width: 25px;
+    height: auto;
+}
+.bubble img:nth-child(3){
+    animation-delay: 3s;
+    width: 15px;
+}
+.bubble img:nth-child(4){
+    animation-delay: 4.5s;
+    width: 60px;
+}
+.bubble img:nth-child(5){
+    animation-delay: 3s;
+    width: 55px;
+}
+.bubble img:nth-child(6){
+    animation-delay: 1s;
+}
+.bubble img:nth-child(7){
+    animation-delay: 7s;
+    width: 60px;
+}
+.bubble img:nth-child(8){
+    animation-delay: 3.5s;
+    width: 20px;
+}
+.bubble img:nth-child(9){
+    animation-delay: 1s;
+}
+.bubble img:nth-child(10){
+    animation-delay: 5s;
+}
